@@ -1,0 +1,12 @@
+class Robot:
+    def __init__(self, name):
+        self.name = name
+    def say_hi(self):
+        print("Hi, I am " + self.name)
+class PhysicianRobot(Robot):
+    pass
+sct1 = Robot("hari")
+sct2 = PhysicianRobot("anand")
+print(sct1, type(sct1))
+print(sct2, type(sct2))
+sct2.say_hi()
